@@ -12,7 +12,8 @@ class App extends React.Component {
       <View style={{
         marginVertical:74,
         marginLeft:32,
-        marginRight:32
+        marginRight:32,
+        fontFamily: "Gilroy-ExtraBold"
       }}>
         <TouchableOpacity 
           style={{
@@ -100,7 +101,10 @@ class App extends React.Component {
           marginVertical:25
         }}>
           <Text style={{
-            marginBottom:6
+            marginBottom:6,
+            color:'#131313',
+            fontWeight:'600',
+            fontSize:17
           }}>@wdlam</Text>
           <Text>Username</Text>
         </View>
@@ -138,7 +142,7 @@ class App extends React.Component {
               fontWeight:'bold',
               color:'#131313'
             }}>Settings</Text>
-          <View style={{marginVertical:25}}>
+          <View style={{marginVertical:25, marginBottom:25}}>
           <TouchableOpacity style={{
             flexDirection:'row',
             alignItems:'center',
