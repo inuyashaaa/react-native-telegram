@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Text, TouchableOpacity, Dimensions, Image} from 'react-native';
+import { ScrollView, View, Text, TouchableOpacity, Dimensions, Image} from 'react-native';
 import { back, profile, setting1, setting2, setting3, setting4, setting5 } from './assets/images';
 const {width} = Dimensions.get('window');
 
@@ -9,10 +9,10 @@ class App extends React.Component {
   }
   render() {
     return (
-      <View style={{
-        marginVertical:74,
-        marginLeft:32,
-        marginRight:32,
+      <ScrollView style={{
+        marginTop:74,
+        paddingLeft:32,
+        paddingRight:32,
         fontFamily: "Gilroy-ExtraBold"
       }}>
         <TouchableOpacity 
@@ -151,8 +151,8 @@ class App extends React.Component {
             <Image 
               source={setting1}
                 style={{
-                  width:10,
-                  height:18,
+                  width:22,
+                  height:22,
                   marginRight:25
                 }}
               />
@@ -166,8 +166,8 @@ class App extends React.Component {
             <Image 
               source={setting2}
                 style={{
-                  width:10,
-                  height:18,
+                  width:22,
+                  height:22,
                   marginRight:25
                 }}
               />
@@ -181,8 +181,8 @@ class App extends React.Component {
               <Image 
                 source={setting3}
                   style={{
-                    width:10,
-                    height:18,
+                    width:22,
+                    height:22,
                     marginRight:25
                   }}
               />
@@ -195,8 +195,8 @@ class App extends React.Component {
               <Image 
                 source={setting4}
                   style={{
-                    width:10,
-                    height:18,
+                    width:22,
+                    height:22,
                     marginRight:25
                   }}
               />
@@ -208,8 +208,8 @@ class App extends React.Component {
               <Image 
                 source={setting5}
                   style={{
-                    width:10,
-                    height:18,
+                    width:22,
+                    height:17,
                     marginRight:25
                   }}
               />
@@ -217,7 +217,7 @@ class App extends React.Component {
           </View>
           
         </View>
-      </View>
+      </ScrollView>
     );
   }
 }
